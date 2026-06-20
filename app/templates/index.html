@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
+
 <head>
-    <title>ICAR-CIFA Fish Growth Analytics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaGrowthAI | ICAR-CIFA</title>
 
 ```
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
 
-    body{
-        background:#f5f7fa;
+    body {
+        background-color: #f5f7fa;
     }
 
-    .hero{
-        background:linear-gradient(135deg,#0d6efd,#198754);
-        color:white;
-        padding:60px;
-        border-radius:15px;
-        margin-top:30px;
+    .hero {
+        background: linear-gradient(135deg, #0d6efd, #198754);
+        color: white;
+        padding: 60px;
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
     }
 
-    .card{
-        border:none;
-        border-radius:15px;
-        box-shadow:0px 3px 12px rgba(0,0,0,0.1);
+    .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0px 3px 12px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .footer {
+        margin-top: 40px;
+        padding: 20px;
+        text-align: center;
+        color: #666;
     }
 
 </style>
@@ -37,36 +54,32 @@
 <div class="container">
 
 ```
-<div class="hero text-center">
+<div class="hero">
 
     <h4>
         ICAR - Central Institute of Freshwater Aquaculture (CIFA)
     </h4>
 
-	<h1>
-		AquaGrowthAI
-	</h1>
+    <h1 class="mt-3">
+        AquaGrowthAI
+    </h1>
 
-	<h3>
-		ICAR-CIFA Research Prototype
-	</h3>
+    <h4>
+        ICAR-CIFA Research Prototype
+    </h4>
 
-	<p>
-	Machine Learning Based Growth Stage Classification
-	and Future Growth Forecasting
-	</p>
-
-
+    <p class="mt-3">
+        Machine Learning Based Growth Stage Classification
+        and Future Growth Forecasting for Indian Major Carps
+    </p>
 
 </div>
 
-<br>
-
 <div class="row">
 
-    <div class="col-md-6">
+    <div class="col-md-6 mb-4">
 
-        <div class="card p-4">
+        <div class="card p-4 h-100">
 
             <h3>
                 Growth Stage Classification
@@ -74,12 +87,11 @@
 
             <p>
                 Predict whether a fish belongs to
-                Early, Intermediate or Advanced
-                growth stage using morphometric parameters.
+                Early, Intermediate, or Advanced
+                growth stages using morphometric parameters.
             </p>
 
-            <a href="/classify"
-               class="btn btn-primary">
+            <a href="/classify" class="btn btn-primary">
                 Open Classifier
             </a>
 
@@ -87,22 +99,21 @@
 
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-6 mb-4">
 
-        <div class="card p-4">
+        <div class="card p-4 h-100">
 
             <h3>
                 Future Growth Forecasting
             </h3>
 
             <p>
-                Predict next month's
-                Length, Weight, Depth,
-                DLPL and Perimeter.
+                Predict next month's Length, Weight,
+                Depth, DLPL and Perimeter using
+                machine learning models.
             </p>
 
-            <a href="/forecast"
-               class="btn btn-success">
+            <a href="/forecast" class="btn btn-success">
                 Open Forecaster
             </a>
 
@@ -112,19 +123,17 @@
 
 </div>
 
-<br>
-
 <div class="card p-4">
 
     <h3>
         Research Results
     </h3>
 
-    <table class="table">
+    <table class="table table-striped">
 
         <tr>
             <td>Classification Accuracy</td>
-            <td><b>66.67%</b></td>
+            <td><b>71.72%</b></td>
         </tr>
 
         <tr>
@@ -153,6 +162,24 @@
         </tr>
 
     </table>
+
+</div>
+
+<div class="footer">
+
+    <hr>
+
+    <h5>
+        ICAR - Central Institute of Freshwater Aquaculture
+    </h5>
+
+    <p>
+        Machine Learning Based Growth Analytics for Indian Major Carps
+    </p>
+
+    <p>
+        Growth Stage Classification & Future Growth Forecasting
+    </p>
 
 </div>
 ```
