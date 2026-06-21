@@ -48,7 +48,7 @@ async def classify_result(
     length: float = Form(...),
     weight: float = Form(...),
     depth: float = Form(...),
-    dlpl: float = Form(...),
+    dpl: float = Form(...),
     perimeter: float = Form(...)
 ):
 
@@ -56,7 +56,7 @@ async def classify_result(
         length,
         weight,
         depth,
-        dlpl,
+        dpl,
         perimeter,
         sex
     )
@@ -91,7 +91,7 @@ async def forecast_result(
     length: float = Form(...),
     weight: float = Form(...),
     depth: float = Form(...),
-    dlpl: float = Form(...),
+    dpl: float = Form(...),
     perimeter: float = Form(...)
 ):
 
@@ -100,7 +100,7 @@ async def forecast_result(
         length,
         weight,
         depth,
-        dlpl,
+        dpl,
         perimeter,
         sex
     )

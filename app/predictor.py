@@ -17,8 +17,8 @@ depth_model = joblib.load(
     "models/NextDepth_model.pkl"
 )
 
-dlpl_model = joblib.load(
-    "models/NextDLPL_model.pkl"
+dpl_model = joblib.load(
+    "models/NextDPL_model.pkl"
 )
 
 perimeter_model = joblib.load(
@@ -30,7 +30,7 @@ def classify_growth(
     length,
     weight,
     depth,
-    dlpl,
+    dpl,
     perimeter,
     sex
 ):
@@ -39,7 +39,7 @@ def classify_growth(
         "Length": length,
         "Weight": weight,
         "Depth": depth,
-        "DLPL": dlpl,
+        "DPL": dpl,
         "Perimeter": perimeter,
         "Sex": sex
     }])
@@ -68,7 +68,7 @@ def forecast_growth(
     length,
     weight,
     depth,
-    dlpl,
+    dpl,
     perimeter,
     sex
 ):
@@ -79,7 +79,7 @@ def forecast_growth(
         "Length": length,
         "Weight": weight,
         "Depth": depth,
-        "DLPL": dlpl,
+        "DPL": dpl,
         "Perimeter": perimeter
     }])
 
@@ -102,9 +102,9 @@ def forecast_growth(
                 2
             ),
 
-        "NextDLPL":
+        "NextDPL":
             round(
-                dlpl_model.predict(sample)[0],
+                dpl_model.predict(sample)[0],
                 2
             ),
 

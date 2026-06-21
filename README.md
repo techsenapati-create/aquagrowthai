@@ -27,7 +27,7 @@ Random Forest Regressors
 | Length | 0.9582 |
 | Weight | 0.9704 |
 | Depth | 0.9268 |
-| DLPL | 0.9181 |
+| DPL | 0.9181 |
 | Perimeter | 0.9571 |
 
 ## Future Vision
