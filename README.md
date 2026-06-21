@@ -6,7 +6,7 @@ Machine Learning Based Growth Stage Classification and Future Growth Forecasting
 
 ## Dataset
 
-- 492 observations
+- 568 observations
 - 8 months monitoring
 - Male and Female fish
 
@@ -16,7 +16,7 @@ Machine Learning Based Growth Stage Classification and Future Growth Forecasting
 
 Random Forest Classifier
 
-Accuracy: 66.67%
+Accuracy: 55.26%
 
 ### Forecasting
 
@@ -32,4 +32,5 @@ Random Forest Regressors
 
 ## Future Vision
 
-Digital Twin Framework for Indian Major Carps
+- Non-Invasive Fish Maturity Assessment Using Mobile Camera Imaging and Deep Learning
+- Digital Twin Framework for Indian Major Carps
