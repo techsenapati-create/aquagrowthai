@@ -45,12 +45,16 @@ def classify_growth(
     }])
 
     prediction = classifier.predict(sample)[0]
+    
+    print("Prediction =", prediction)
+    print("Model Classes =", classifier.classes_)
 
     stage_names = {
-        0: "Preparatory",
-        1: "Pre-spawning",
-        2: "Spawning",
-        3: "Post-spawning"
+        
+        0: "Post-spawning",
+        1: "Resting",
+        2: "Preparatory",
+        3: "Pre-spawning"
     }
 
     return stage_names.get(

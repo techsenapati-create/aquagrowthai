@@ -16,7 +16,7 @@ Machine Learning Based Growth Stage Classification and Future Growth Forecasting
 
 Random Forest Classifier
 
-Accuracy: 55.26%
+Accuracy: 50.00%
 
 ### Forecasting
 
