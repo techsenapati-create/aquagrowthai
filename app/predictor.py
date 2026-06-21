@@ -47,9 +47,10 @@ def classify_growth(
     prediction = classifier.predict(sample)[0]
 
     stage_names = {
-        1: "Early",
-        2: "Intermediate",
-        3: "Advanced"
+        0: "Preparatory",
+        1: "Pre-spawning",
+        2: "Spawning",
+        3: "Post-spawning"
     }
 
     return stage_names.get(
