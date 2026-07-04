@@ -6,8 +6,8 @@ Machine Learning Based Growth Stage Classification and Future Growth Forecasting
 
 ## Dataset
 
-- 568 observations
-- 8 months monitoring
+- 639 observations
+- 9 months monitoring (Oct to June)
 - Male and Female fish
 
 ## Models
@@ -16,7 +16,7 @@ Machine Learning Based Growth Stage Classification and Future Growth Forecasting
 
 Random Forest Classifier
 
-Accuracy: 50.00%
+Accuracy: 49.22%
 
 ### Forecasting
 
@@ -24,11 +24,11 @@ Random Forest Regressors
 
 | Parameter | R² |
 |------------|------------|
-| Length | 0.9582 |
-| Weight | 0.9704 |
-| Depth | 0.9268 |
-| DPL | 0.9181 |
-| Perimeter | 0.9571 |
+| Length | 0.9549 |
+| Weight | 0.9721 |
+| Depth | 0.8928 |
+| DPL | 0.9275 |
+| Perimeter | 0.9383 |
 
 ## Future Vision
 
